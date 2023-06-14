@@ -1,0 +1,59 @@
+Takip algoritması, tespit edilen bir nesnenin farklı yöntemler kullanılarak bir sonraki
+konumunu tahmin etmeye olanak sağlamaktadır. Böylece her seferinde tekrardan nesne tespiti
+yapmak yerine hedef tespit edildikten sonra takip algoritması çalıştırılarak hedefin takip
+edilmesi sağlanacak ve işlem yükü hafifletilecektir. İşlem yükünün hafifletilmesi, işlem hızı
+bakımından da avantaj sağlamaktadır. Hedef tespiti için SORT (Simple Online and Realtime
+Tracking) ve DeepSort nesne takip algoritmaları üzerinde durulmuştur. Sort algoritması tespit
+edilen nesnenin bir sonraki karede nerede olacağını Kalman Filtresi yöntemini kullanarak
+tahmin işlemi uygular. Bir önceki karede bulunan nesne ile anlık olarak karede bulunan nesneyi
+skor yardımıyla ilişkilendirir. Bu dahilde avantajlara sahip olan algoritma, objelerin kaybolması
+veya iç içe geçmesi durumunda zayıf kalmaktadır.
+
+veri seti Kaggle dan alınabilir.Coco
+
+otonom kontrol için yönlendirme algoritmasına aktarılır. Burada
+zaman farkı çok önemli olduğundan işlenen her kare için ayrı ayrı zaman damgası vurulur.
+
+Faster Recurrent
+Convolutional Neural Network (Faster R-CNN) (Ren et al., 2017), You Only Look Once
+(YOLO) (Redmon et al., 2016), and Single Shot Detector (SSD) object detection methods (Liu
+et al., 2016). The comparison results between the methods.
+
+OpenCV KCF algoritması kullanarak tespit algoritması geliştirilmiştir.
+
+Eğer hedef İHA’nın görüntüsü sonraki döngüde de
+tanımlanabilirse hedefin konumu ve boyutu Kalman Filtresine aktarılır. Görüntüde devamlılık
+sağlanamazsa son uçuş emri tekrarlanır
+
+Underfitting and Overfitting: If our algorithm works well with the training
+dataset but not well with test dataset, then such problem is called Overfitting.
+And if our algorithm does not perform well even with training dataset,
+then such problem is called underfitting.
+
+Merhaba. Sorunuz ve teşvik edici yorumunuz için teşekkürler. 
+Videoların devamı için elimden geleni yapmaya çalışacağım.
+ YOLO ve OpenCV nin canlı nesne algılama konusunda yeterli 
+olabileceğine ilişkin web'de olumlu yorumlar bulunmakta 
+(örneğin: https://www.researchgate.net/post/Is-there-any-Object-detection-model-with-85-Accuracy-and-30-fps-speed). 
+Canlı videoda 30 FPS (frame per second) ile nesne tanıma hedefleniyorsa bunun için
+ öncelikle yeterli ve hızlı donanım kullanmak gerekecektir.
+ FPS oranını artırmak için CPU yerine güçlü bir GPU kullanmak bir seçenek. 
+Ayrıca YOLO nun normal versiyonu yerine "tiny" versiyonunu kullanarak da FPS oranını artırmak
+ diğer bir seçenek. Fakat "tiny" versiyonda doğruluk biraz azalabilir. 
+Sizin sorunuzda İHA algılama ve takip konusu için konuşacak olursak, 80 tane farklı nesneyi 
+tanımak yerine 1 yada birkaç nesneyi (örneğin bir yada birkaç drone nesnesini) 
+tanımak istediğimizde bunun için algılama hızını (FPS yi) artırmak amacıyla sadece 
+odaklandığmız nesne(ler) için YOLO'yu yeniden eğitebiliriz. Bu sayede hem FPS oranı
+ daha iyi olur hem de doğruluk oranın iyileşebilir.
+
+Adrian da sitesinde Jetson Nano kullanmış
+ (https://pysource.com/2019/08/29/yolo-v3-install-and-run-yolo-on-nvidia-jetson-nano-with-gpu/). 
+isterseniz oraya da bir göz atın. Videosunda FPS oranı çok düşük görünüyordu.
+ Fakat belki siz tanınacak nesne sayısını azaltarak FPS yi artırabilirsiniz.
+
+pandas numpy https://www.w3schools.com/ai/default.asp sklearn
+
+https://towardsdatascience.com/yolov4-with-cuda-powered-opencv-dnn-2fef48ea3984 for cudA
+
+
+
