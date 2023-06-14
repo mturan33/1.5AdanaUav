@@ -1,0 +1,8 @@
+2.10.0
+
+[UPDATE] Error in loading cupti*.dll file
+
+When running your tensorflow program, you may face an error indicating that
+tensorflow cannot open cupti*.dll file. In this case, just find this file in
+the CUDA installation directory, make a copy of it, and rename it to the one 
+mentioned in the error.

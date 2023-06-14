@@ -1,0 +1,12 @@
+https://ieeexplore.ieee.org/document/7759733
+https://ieeexplore.ieee.org/document/8303666
+https://ieeexplore.ieee.org/document/9549378
+https://ieeexplore.ieee.org/document/8962431
+https://ieeexplore.ieee.org/document/9607704
+https://ieeexplore.ieee.org/document/9864746
+https://ieeexplore.ieee.org/document/8090905
+https://ieeexplore.ieee.org/document/9237926
+https://ieeexplore.ieee.org/document/9712830
+https://ieeexplore.ieee.org/document/9864725
+https://engineering.purdue.edu/~bouman/UAV_Dataset/
+https://github.com/jingliinpurdue/Fast-and-Robust-UAV-to-UAV-Detection-and-Tracking/

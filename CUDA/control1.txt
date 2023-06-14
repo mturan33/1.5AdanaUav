@@ -1,0 +1,8 @@
+from tensorflow.python.client import device_lib
+def get_available_gpus():
+    local_device_protos = device_lib.list_local_devices()
+    return [x.name for x in local_device_protos if x.device_type == 'GPU']
+get_available_gpus()
+
+python -c "import distutils;print(distutils.__version__, dir(distutils))" 3.7.5 ['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'sys']
+python -c "from setuptools import distutils;print(distutils.__version__, dir(distutils))" 3.7.5 ['__builtins__', '__cached__', '__doc__', '__file__', '__loader__', '__name__', '__package__', '__path__', '__spec__', '__version__', 'archive_util', 'ccompiler', 'cmd', 'config', 'core', 'debug', 'dep_util', 'dir_util', 'dist', 'errors', 'extension', 'fancy_getopt', 'file_util', 'filelist', 'log', 'spawn', 'sys', 'sysconfig', 'util', 'version']

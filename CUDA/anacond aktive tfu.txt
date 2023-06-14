@@ -1,0 +1,32 @@
+# Run Anaconda prompt (Start Menu -> Anaconda3 -> Anaconda Prompt)
+(base) C:\Users\ashkan\Documents> conda create -n tf-gpu python=3.6
+(base) C:\Users\ashkan\Documents> activate tf-gpu
+(tf-gpu) C:\Users\ashkan\Documents> pip install tensorflow-gpu==1.9
+# Test Tensorflow!
+(tf-gpu) C:\Users\ashkan\Documents>python
+Python 3.6.8 |Anaconda, Inc.| (default, Dec 30 2018, 18:50:55) [MSC v.1915 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import tensorflow as tf
+>>> tf.__version__
+'1.9.0'
+>>>exit()
+(tf-gpu) C:\Users\ashkan\Documents>
+
+pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio===0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+
+conda install pytorch torchvision cudatoolkit=11.8.89 -c pytorch
+
+conda install setuptools==58.0.4
+
+https://machinelearningprojects.net/train-yolov7-on-the-custom-dataset/
+
+https://medium.com/@ashkan.abbasi/quick-guide-for-installing-python-tensorflow-and-pycharm-on-windows-ed99ddd9598
+
+Here are some useful commands:
+
+Activating an environment: activate environment_name or conda activate environment_name
+Listing all the environments: conda env list or conda info --envs
+Deactivating the current environment and returning to the "base": deactivate
+Remove an environment: After switching to the base environment, run conda env remove --name environment_name command.
+You may install lots of packages. After that, you may want to get rid of downloaded files to install those packages.
+ In this case, use pip cache purge and conda clean -a.

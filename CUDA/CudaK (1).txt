@@ -1,0 +1,8 @@
+https://github.com/sezer-muhammed/Eflatun-IHA
+https://neptune.ai/blog/annotation-tool-comparison-deep-learning-data-annotation
+https://machinelearningprojects.net/train-yolov7-on-the-custom-dataset/
+dataset için bak:
+https://openaccess.thecvf.com/content/CVPR2021/papers/Ashraf_Dogfight_Detecting_Drones_From_Drones_Videos_CVPR_2021_paper.pdf
+https://engineering.purdue.edu/~bouman/UAV_Dataset/
+tracking algorithm:
+https://github.com/jingliinpurdue/Fast-and-Robust-UAV-to-UAV-Detection-and-Tracking/

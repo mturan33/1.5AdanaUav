@@ -1,0 +1,3 @@
+The definition of FPS is 1 / inference_time, 
+just compute this value. In your case, with an 
+inference time of around 1.5 s, you should obtain around 0.66 fps.
