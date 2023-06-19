@@ -1,0 +1,271 @@
+Reinforcement Learning
+
+Reinforcement learning is an area of Machine Learning. It is about taking suitable action to maximize reward in a particular situation. It is employed by various software and machines to find the best possible behavior or path it should take in a specific situation. Reinforcement learning differs from supervised learning in a way that in supervised learning the training data has the answer key with it so the model is trained with the correct answer itself whereas in reinforcement learning, there is no answer but the reinforcement agent decides what to do to perform the given task. In the absence of a training dataset, it is bound to learn from its experience. 
+
+Reinforcement Learning (RL) is the science of decision making. It is about learning the optimal behavior in an environment to obtain maximum reward. In RL, the data is accumulated from machine learning systems that use a trial-and-error method. Data is not part of the input that we would find in supervised or unsupervised machine learning.
+
+Reinforcement learning uses algorithms that learn from outcomes and decide which action to take next. After each action, the algorithm receives feedback that helps it determine whether the choice it made was correct, neutral or incorrect. It is a good technique to use for automated systems that have to make a lot of small decisions without human guidance.
+
+Reinforcement learning is an autonomous, self-teaching system that essentially learns by trial and error. It performs actions with the aim of maximizing rewards, or in other words, it is learning by doing in order to achieve the best outcomes.
+
+
+Türkçesi: 
+
+Takviyeli öğrenme, Makine Öğreniminin bir alanıdır. Belirli bir durumda ödülü en üst düzeye çıkarmak için uygun eylemi yapmakla ilgilidir. Belirli bir durumda izlemesi gereken olası en iyi davranışı veya yolu bulmak için çeşitli yazılımlar ve makineler tarafından kullanılır. Takviyeli öğrenme, denetimli öğrenmeden, denetimli öğrenmede eğitim verilerinin cevap anahtarına sahip olması ve böylece modelin doğru cevabın kendisi ile eğitilmesi, takviyeli öğrenmede ise cevap olmaması, ancak pekiştirici ajanın ne yapılacağına karar vermesi bakımından farklıdır. verilen görevi yerine getirin. Bir eğitim veri setinin yokluğunda, deneyimlerinden ders alması kaçınılmazdır.
+
+Takviyeli Öğrenme (RL), karar verme bilimidir. Maksimum ödül elde etmek için bir ortamda en uygun davranışı öğrenmekle ilgilidir. RL'de veriler, deneme yanılma yöntemini kullanan makine öğrenimi sistemlerinden toplanır. Veriler, denetimli veya denetimsiz makine öğreniminde bulabileceğimiz girdilerin bir parçası değildir.
+
+Takviyeli öğrenme, sonuçlardan öğrenen ve bundan sonra hangi eylemin gerçekleştirileceğine karar veren algoritmalar kullanır. Her eylemden sonra algoritma, yaptığı seçimin doğru, tarafsız veya yanlış olup olmadığını belirlemesine yardımcı olan geri bildirim alır. İnsan rehberliği olmadan birçok küçük karar vermek zorunda olan otomatik sistemler için kullanmak için iyi bir tekniktir.
+
+Takviyeli öğrenme, temelde deneme yanılma yoluyla öğrenen özerk, kendi kendine öğreten bir sistemdir. Ödülleri en üst düzeye çıkarmak amacıyla eylemler gerçekleştirir, diğer bir deyişle en iyi sonuçları elde etmek için yaparak öğrenmedir.
+
+Main points in Reinforcement learning – 
+ 
+
+Input: The input should be an initial state from which the model will start
+
+Output: There are many possible outputs as there are a variety of solutions to a particular problem
+
+Training: The training is based upon the input, The model will return a state and the user will decide to reward or punish the model based on its output.
+
+The model keeps continues to learn.
+
+The best solution is decided based on the maximum reward.
+
+Türkçesi: 
+
+Girdi: Girdi, modelin başlayacağı başlangıç ​​durumu olmalıdır.
+
+Çıktı: Belirli bir problem için çeşitli çözümler olduğu için birçok olası çıktı vardır.
+
+Eğitim: Eğitim, girdiye dayalıdır, Model bir durum döndürür ve kullanıcı, çıktısına göre modeli ödüllendirmeye veya cezalandırmaya karar verir.
+
+Model öğrenmeye devam ediyor.
+
+En iyi çözüm, maksimum ödüle göre belirlenir.
+
+
+Difference between Reinforcement learning and Supervised learning: 
+
+Reinforcement learning is all about making decisions sequentially. 
+In simple words, we can say that the output depends on the state of the current input and the next input depends on the output of the previous input
+
+In Reinforcement learning decision is dependent, So we give labels to sequences of dependent decisions
+
+Example: Chess game,text summarization
+
+
+
+Supervised Learning
+
+In Supervised learning, the decision is made on the initial input or the input given at the start
+
+In supervised learning the decisions are independent of each other so labels are given to each decision.
+
+Example: Object recognition,spam detetction
+
+
+Türkçesi: 
+
+Takviyeli öğrenme, tamamen sırayla kararlar vermekle ilgilidir. Basit bir ifadeyle, 
+çıktının mevcut girdinin durumuna bağlı olduğunu ve bir sonraki girdinin önceki girdinin çıktısına bağlı olduğunu söyleyebiliriz.
+
+Takviye öğrenmede karar bağımlıdır, bu nedenle bağımlı karar dizilerine etiketler veriyoruz
+
+Örnek: Satranç oyunu, metin özetleme
+
+
+Denetimli öğrenme:
+
+Denetimli öğrenmede, ilk girdiye veya başlangıçta verilen girdiye karar verilir.
+
+Denetimli öğrenmede kararlar birbirinden bağımsızdır, bu nedenle her karara etiketler verilir.
+
+Types of Reinforcement(Takviye Çeşitleri):
+
+There are two types of Reinforcement:  
+
+Positive: Positive Reinforcement is defined as when an event, occurs due to a particular behavior,
+
+ increases the strength and the frequency of the behavior.
+
+ In other words, it has a positive effect on behavior. 
+
+ Advantages of reinforcement learning are: 
+
+Maximizes Performance
+
+Sustain Change for a long period of time
+
+Too much Reinforcement can lead to an overload of states which can diminish the results
+
+
+Negative: Negative Reinforcement is defined as strengthening of behavior because a negative condition is stopped or avoided. 
+
+Advantages of reinforcement learning:
+ 
+Increases Behavior
+
+Provide defiance to a minimum standard of performance
+
+It Only provides enough to meet up the minimum behavior
+
+
+Türkçesi:
+
+Pozitif:
+
+ Pozitif Pekiştirme, belirli bir davranış nedeniyle meydana gelen bir olayın,
+
+ davranışın gücünü ve sıklığını artırması olarak tanımlanır. Başka bir deyişle, davranış üzerinde olumlu bir etkisi vardır.
+
+Takviyeli öğrenmenin avantajları şunlardır:
+
+Performansı En Üst Düzeye Çıkarır
+
+Değişimi Uzun Süre Sürdürmek
+
+Çok fazla Takviye, sonuçları azaltabilecek durumların aşırı yüklenmesine neden olabilir.
+
+Negatif: Olumsuz Pekiştirme, olumsuz bir koşul durdurulduğu veya kaçınıldığı için davranışın güçlendirilmesi olarak tanımlanır.
+
+Takviyeli öğrenmenin dezavantajları:
+
+Davranışı Artırır
+
+Asgari bir performans standardına meydan okuyun
+
+Yalnızca minimum davranışı karşılamaya yetecek kadar sağlar
+
+
+Elements of Reinforcement Learning
+
+  Reinforcement learning elements are as follows:
+
+Policy
+Reward function
+Value function
+Model of the environment
+
+Policy: Policy defines the learning agent behavior for given time period. It is a mapping from perceived states of the environment to actions to be taken when in those states.
+
+Reward function: Reward function is used to define a goal in a reinforcement learning problem.A reward function is a function that provides a numerical score based on the state of the environment
+
+Value function: Value functions specify what is good in the long run. The value of a state is the total amount of reward an agent can expect to accumulate over the future, starting from that state.
+
+Model of the environment: Models are used for planning.
+
+⚫ Credit assignment problem: Reinforcement learning algorithms learn to generate an internal value for the intermediate states as to how good they are in leading to the goal. The learning decision maker is called the agent. The agent interacts with the environment that includes everything outside the agent. 
+
+The agent has sensors to decide on its state in the environment and takes action that modifies its state.
+
+⚫ The reinforcement learning problem model is an agent continuously interacting with an environment. The agent and the environment interact in a sequence of time steps. At each time step t, the agent receives the state of the environment and a scalar numerical reward for the previous action, and then the agent then selects an action.
+
+Reinforcement learning is a technique for solving Markov decision problems.
+
+⚫ Reinforcement learning uses a formal framework defining the interaction between a learning agent and its environment in terms of states, actions, and rewards. This framework is intended to be a simple way of representing essential features of the artificial intelligence problem.
+
+Türkçesi:
+
+Takviyeli öğrenme unsurları aşağıdaki gibidir:
+
+Politika
+Ödül işlevi
+Değer işlevi
+çevre modeli
+
+İlke: İlke, belirli bir süre için öğrenme aracısı davranışını tanımlar. Çevrenin algılanan durumlarından bu durumlarda gerçekleştirilecek eylemlere kadar bir haritalamadır.
+
+Ödül fonksiyonu: Ödül fonksiyonu, pekiştirmeli öğrenme probleminde bir hedefi tanımlamak için kullanılır. Ödül fonksiyonu, ortamın durumuna göre sayısal bir puan sağlayan bir fonksiyondur.
+
+Değer işlevi: Değer işlevleri, uzun vadede neyin iyi olduğunu belirtir. Bir durumun değeri, bir temsilcinin o durumdan başlayarak gelecekte biriktirmeyi bekleyebileceği toplam ödül miktarıdır.
+
+Çevre modeli: Modeller planlama için kullanılır.
+
+⚫ Kredi atama problemi: Takviyeli öğrenme algoritmaları, ara durumlar için amaca ulaşmada ne kadar iyi olduklarına dair dahili bir değer üretmeyi öğrenir. Öğrenen karar vericiye aracı denir. Ajan, ajanın dışındaki her şeyi içeren çevre ile etkileşime girer.
+
+Ajan, ortamdaki durumuna karar vermek için sensörlere sahiptir ve durumunu değiştiren eylemde bulunur.
+
+⚫ Takviyeli öğrenme problemi modeli, bir çevre ile sürekli etkileşim halinde olan bir etmendir. Ajan ve çevre, bir dizi zaman adımında etkileşime girer. Her t adımında, aracı ortamın durumunu ve önceki eylem için skaler bir sayısal ödülü alır ve ardından aracı bir eylem seçer.
+
+Takviyeli öğrenme, Markov karar problemlerini çözmek için bir tekniktir.
+
+⚫ Takviyeli öğrenme, bir öğrenme aracısı ile çevresi arasındaki etkileşimi durumlar, eylemler ve ödüller açısından tanımlayan resmi bir çerçeve kullanır. Bu çerçeve, yapay zeka probleminin temel özelliklerini temsil etmenin basit bir yolu olarak tasarlanmıştır.
+
+Various Practical Applications of Reinforcement Learning – 
+ 
+
+RL can be used in robotics for industrial automation.
+RL can be used in machine learning and data processing
+RL can be used to create training systems that provide custom instruction and materials according to the requirement of students.
+
+Takviyeli Öğrenmenin Çeşitli Pratik Uygulamaları –
+ 
+
+RL, endüstriyel otomasyon için robotikte kullanılabilir.
+RL, makine öğrenimi ve veri işlemede kullanılabilir
+RL, öğrencilerin gereksinimlerine göre özel öğretim ve materyaller sağlayan eğitim sistemleri oluşturmak için kullanılabilir.
+
+A model of the environment is known, but an analytic solution is not available;
+Only a simulation model of the environment is given (the subject of simulation-based optimization)
+The only way to collect information about the environment is to interact with it.
+
+Çevrenin bir modeli biliniyor, ancak analitik bir çözüm mevcut değil;
+Yalnızca ortamın bir simülasyon modeli verilir (simülasyon tabanlı optimizasyonun konusu)
+Çevre hakkında bilgi toplamanın tek yolu, onunla etkileşim kurmaktır.
+
+Advantages and Disadvantages of Reinforcement Learning
+ Advantages of Reinforcement learning
+
+1. Reinforcement learning can be used to solve very complex problems that cannot be solved by conventional techniques.
+
+2. The model can correct the errors that occurred during the training process. 
+
+3. In RL, training data is obtained via the direct interaction of the agent with the environment
+
+4. Reinforcement learning can handle environments that are non-deterministic, meaning that the outcomes of actions are not always predictable. This is useful in real-world applications where the environment may change over time or is uncertain.
+
+5. Reinforcement learning can be used to solve a wide range of problems, including those that involve decision making, control, and optimization.
+
+6. Reinforcement learning is a flexible approach that can be combined with other machine learning techniques, such as deep learning, to improve performance.
+
+Disadvantages of Reinforcement learning
+
+1. Reinforcement learning is not preferable to use for solving simple problems.
+
+2. Reinforcement learning needs a lot of data and a lot of computation
+
+3. Reinforcement learning is highly dependent on the quality of the reward function. If the reward function is poorly designed, the agent may not learn the desired behavior.
+
+4. Reinforcement learning can be difficult to debug and interpret. It is not always clear why the agent is behaving in a certain way, which can make it difficult to diagnose and fix problems.
+
+
+
+Takviyeli Öğrenmenin Avantajları ve Dezavantajları
+ Takviyeli Öğrenmenin Avantajları
+
+1. Takviyeli öğrenme, geleneksel tekniklerle çözülemeyen çok karmaşık problemleri çözmek için kullanılabilir.
+
+2. Model, eğitim sürecinde oluşan hataları düzeltebilir.
+
+3. RL'de eğitim verileri, aracının çevre ile doğrudan etkileşimi yoluyla elde edilir.
+
+4. Takviyeli öğrenme, deterministik olmayan, yani eylemlerin sonuçlarının her zaman tahmin edilebilir olmadığı ortamları idare edebilir. Bu, ortamın zaman içinde değişebileceği veya belirsiz olduğu gerçek dünya uygulamalarında kullanışlıdır.
+
+5. Takviyeli öğrenme, karar verme, kontrol ve optimizasyon içerenler de dahil olmak üzere çok çeşitli sorunları çözmek için kullanılabilir.
+
+6. Takviyeli öğrenme, performansı artırmak için derin öğrenme gibi diğer makine öğrenimi teknikleriyle birleştirilebilen esnek bir yaklaşımdır.
+
+Takviyeli öğrenmenin dezavantajları
+
+1. Takviyeli öğrenme, basit problemleri çözmek için tercih edilmez.
+
+2. Takviyeli öğrenme, çok fazla veriye ve çok fazla hesaplamaya ihtiyaç duyar
+
+3. Takviyeli öğrenme büyük ölçüde ödül işlevinin kalitesine bağlıdır. Ödül işlevi kötü tasarlanmışsa, temsilci istenen davranışı öğrenemeyebilir.
+
+4. Takviyeli öğrenmede hata ayıklamak ve yorumlamak zor olabilir. Aracının neden belirli bir şekilde davrandığı her zaman net değildir, bu da sorunları teşhis etmeyi ve düzeltmeyi zorlaştırabilir.
+
+
+References: https://www.geeksforgeeks.org/what-is-reinforcement-learning/
+
