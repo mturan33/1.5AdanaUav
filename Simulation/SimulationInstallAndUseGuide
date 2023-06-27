@@ -1,0 +1,85 @@
+SIMULATION INSTALLATİON SEGMENT:
+
+Simulation installation guide:
+firstly we need 18.04 ubuntu system for the simulation
+https://www.youtube.com/watch?v=qLQQbhKDQ6M&list=PLy9nLDKxDN683GqAiJ4IVLquYBod_2oA6&index=4
+https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_qgc.md
+https://github.com/NVlabs/instant-ngp/discussions/300
+
+qground and ardupilot sitl :
+https://docs.qgroundcontrol.com/master/en/getting_started/download_and_install.html
+gazebo :
+https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_gazebo_arduplugin.md
+
+ros setup:
+https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/installing_ros.md
+http://wiki.ros.org/melodic/Installation/Ubuntu
+https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/ros_intro.md
+
+You should be able to customize your drone by editing the properties in your drone's model sdf. from there you can tun mass, shape, and other properties. 
+
+tutorials and documentations:
+https://github.com/khancyr/ardupilot_gazebo/blob/master/models/iris_with_standoffs/model.sdf
+https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/gnc_tutorial.md
+https://github.com/Intelligent-Quads/iq_tutorials/blob/master/docs/GNC_functions_documentation.md
+
+*************************************************************************************************
+SIMULATION CODE SEGMENT:
+
+opening workspace:
+cd catkin_ws/src/
+subl .
+
+every time after made changes in the cpp files run this command:
+cd catkin_ws/src/
+catkin build
+
+after write this to make program find the executibles:
+source ~/.bashrc
+
+to start simulation, enter these lines:
+
+1.terminal:to start gazebo simulation
+	 roslaunch iq_sim runway.launch
+for vtol roslaunch iq_sim vtol.launch
+
+2.terminal:to start mavproxy arducopter sitl 
+	cd
+	./startsitl.sh
+
+3.terminal:to start mavros;cominication between arducopter and ros
+	roslaunch iq_sim apm.launch
+
+NOTE: wait for to show up this lines;
+AP: EKF2 IMU0 is using GPS
+AP: EKF2 IMU1 is using GPS
+in the mavproxy console
+
+4.terminal:to start autonomous program that we wrote
+	rosrun iq_gnc square2 
+	or rosrun iq_gnc "name of the cpp file"
+
+After at 2. terminal write:
+mode GUIDED
+to land write:
+mode land
+
+*************************************************************************************************
+SIMULATION QGROUND SEGMENT:
+
+for starting qground:
+chmod +x ./QGroundControl.AppImage
+./QGroundControl.AppImage 
+
+for starting gazebo simulation:
+gazebo --verbose ~/ardupilot_gazebo/worlds/iris_arducopter_runway.world
+
+for starting ardupilot sitl:
+cd ~/ardupilot/ArduCopter/
+sim_vehicle.py -v ArduCopter -f gazebo-iris --console
+
+go to the ardupilot sitl terminal :
+write "mode GUIDED   " in ardupilot sitl terminal 
+after write "arm throttle    "
+
+
