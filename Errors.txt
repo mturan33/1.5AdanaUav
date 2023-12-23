@@ -1,0 +1,10 @@
+must run as root
+sudo ekle
+
+fatal unable to connect to github.com: 
+git config --global url."https://github.com".insteadOf git://github.com
+to undo this
+~/.gitconfig
+
+waf hatası için:
+https://ardupilot.org/dev/docs/building-setup-linux.html
